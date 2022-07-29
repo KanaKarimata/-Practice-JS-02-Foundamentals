@@ -161,28 +161,48 @@
 
 
 //add elements
-const friends = [`Michael`, `Steven`, `Peter`];
-const newLength = friends.push(`Jay`);
-console.log(friends);
-console.log(newLength);
+// const friends = [`Michael`, `Steven`, `Peter`];
+// const newLength = friends.push(`Jay`);
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift(`John`);
-console.log(friends);
+// friends.unshift(`John`);
+// console.log(friends);
 
-//remove elements
-friends.pop();//last
-const popped = friends.pop();//last (peter)
-console.log(popped);
-console.log(friends);
+// //remove elements
+// friends.pop();//last
+// const popped = friends.pop();//last (peter)
+// console.log(popped);
+// console.log(friends);
 
-friends.shift();//first
-console.log(friends);
+// friends.shift();//first
+// console.log(friends);
 
-console.log(friends.indexOf(`Steven`));
+// console.log(friends.indexOf(`Steven`));
 
-console.log(friends.includes(`Steven`));
-console.log(friends.includes(`Bob`));
+// console.log(friends.includes(`Steven`));
+// console.log(friends.includes(`Bob`));
 
-if (friends.includes(`Steven`)) {
-  console.log(`You have a friend called Steven`);
+// if (friends.includes(`Steven`)) {
+//   console.log(`You have a friend called Steven`);
+// }
+
+//coding challenge #2
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+  // if (bill >=50 && bill <= 300) {
+  //   const tip = bill *0.15
+  //   return tip;
+  // } else {
+  //   const tip = bill *0.2
+  //   return tip;
+  // }
 }
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[2]), calcTip(bills[bills.length - 1])];
+console.log(tips);
+const total = [tips[0] + bills[0], tips[1] + bills[1], tips[tips.length - 1] + bills[bills.length -1]];
+console.log(total);
