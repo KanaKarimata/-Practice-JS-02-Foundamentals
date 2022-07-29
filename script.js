@@ -189,20 +189,39 @@
 
 //coding challenge #2
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
-  // if (bill >=50 && bill <= 300) {
-  //   const tip = bill *0.15
-  //   return tip;
-  // } else {
-  //   const tip = bill *0.2
-  //   return tip;
-  // }
-}
-console.log(calcTip(100));
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+//   // if (bill >=50 && bill <= 300) {
+//   //   const tip = bill *0.15
+//   //   return tip;
+//   // } else {
+//   //   const tip = bill *0.2
+//   //   return tip;
+//   // }
+// }
+// console.log(calcTip(100));
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[2]), calcTip(bills[bills.length - 1])];
-console.log(tips);
-const total = [tips[0] + bills[0], tips[1] + bills[1], tips[tips.length - 1] + bills[bills.length -1]];
-console.log(total);
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[2]), calcTip(bills[bills.length - 1])];
+// console.log(tips);
+// const total = [tips[0] + bills[0], tips[1] + bills[1], tips[tips.length - 1] + bills[bills.length -1]];
+// console.log(total);
+
+const jonasArray = [
+  `Jonas`,
+  `Karimata`,
+  2037 - 1997,
+  `programmer`,
+  [`Michael`, `Peter`, `Steven`]
+];
+//object
+const jonas = {
+  firstName: `Jonas`,
+  lastName: `Kana`,
+  age: 2037 - 1997,
+  job: `teacher`,
+  friends: [`Michael`, `Peter`, `Steven`]
+};
+//keys: values
+//keys are properties
+//jonas object has 5 properties
