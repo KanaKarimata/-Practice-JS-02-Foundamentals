@@ -207,14 +207,25 @@
 // const total = [tips[0] + bills[0], tips[1] + bills[1], tips[tips.length - 1] + bills[bills.length -1]];
 // console.log(total);
 
-const jonasArray = [
-  `Jonas`,
-  `Karimata`,
-  2037 - 1997,
-  `programmer`,
-  [`Michael`, `Peter`, `Steven`]
-];
-//object
+// const jonasArray = [
+//   `Jonas`,
+//   `Karimata`,
+//   2037 - 1997,
+//   `programmer`,
+//   [`Michael`, `Peter`, `Steven`]
+// ];
+// //object
+// const jonas = {
+//   firstName: `Jonas`,
+//   lastName: `Kana`,
+//   age: 2037 - 1997,
+//   job: `teacher`,
+//   friends: [`Michael`, `Peter`, `Steven`]
+// };
+// //keys: values
+// //keys are properties
+// //jonas object has 5 properties
+
 const jonas = {
   firstName: `Jonas`,
   lastName: `Kana`,
@@ -222,6 +233,28 @@ const jonas = {
   job: `teacher`,
   friends: [`Michael`, `Peter`, `Steven`]
 };
-//keys: values
-//keys are properties
-//jonas object has 5 properties
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas[`lastName`]);
+
+const nameKey = `Name`;
+console.log(jonas[`first` + nameKey]);
+console.log(jonas[`last` + nameKey]);
+
+// console.log(jonas)
+
+const interestedIn = prompt(`What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends`);
+
+if(jonas[interestedIn]){
+  console.log(jonas[interestedIn]);
+} else {
+  console.log(`Wrong request! Choose between firstName, lastName, age, job and friends`);
+}
+
+jonas.location = `Portugal`;
+jonas[`twitter`] = `@jonaskarimata`;
+console.log(jonas);
+
+//challenge
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
