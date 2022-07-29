@@ -124,37 +124,65 @@
 // checkWinner(scoreDolphins, scoreKoalas);
 
 //Array
-const friend1 = `Michael`;
-const friend2 = `Steven`;
-const friend3 = `Peter`;
+// const friend1 = `Michael`;
+// const friend2 = `Steven`;
+// const friend3 = `Peter`;
 
+// const friends = [`Michael`, `Steven`, `Peter`];
+// console.log(friends);
+
+// const y = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length); //3
+// console.log(friends[friends.length - 1]); //[2] => Peter
+
+// friends[2] = `Jay`;
+// console.log(friends);
+
+// const firstName = `Kana`;
+// const kana = [firstName, `Karimata`, 2037-1997, `Programmer`, friends];
+// console.log(kana);
+// console.log(kana.length);
+
+// const calcAge = function (birthYear){
+//     return 2037 - birthYear;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length -1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -1])]
+// console.log(ages);
+
+
+//add elements
 const friends = [`Michael`, `Steven`, `Peter`];
+const newLength = friends.push(`Jay`);
+console.log(friends);
+console.log(newLength);
+
+friends.unshift(`John`);
 console.log(friends);
 
-const y = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0]);
-console.log(friends[2]);
-
-console.log(friends.length); //3
-console.log(friends[friends.length - 1]); //[2] => Peter
-
-friends[2] = `Jay`;
+//remove elements
+friends.pop();//last
+const popped = friends.pop();//last (peter)
+console.log(popped);
 console.log(friends);
 
-const firstName = `Kana`;
-const kana = [firstName, `Karimata`, 2037-1997, `Programmer`, friends];
-console.log(kana);
-console.log(kana.length);
+friends.shift();//first
+console.log(friends);
 
-const calcAge = function (birthYear){
-    return 2037 - birthYear;
+console.log(friends.indexOf(`Steven`));
+
+console.log(friends.includes(`Steven`));
+console.log(friends.includes(`Bob`));
+
+if (friends.includes(`Steven`)) {
+  console.log(`You have a friend called Steven`);
 }
-const years = [1990, 1967, 2002, 2010, 2018];
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length -1]);
-console.log(age1, age2, age3);
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -1])]
-console.log(ages);
