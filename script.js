@@ -45,25 +45,36 @@
 // const age2 = calcAge2(1997);
 // console.log(age1, age2);
 
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+// //Arrow function
+// const calcAge3 = birthYear => 2037 - birthYear;
+// const age3 = calcAge3(1997);
+// console.log(age3);
 
-const calcAge2 = function (birthYear) {
-    return 2037 - birthYear;
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   // return retirement;
+//   return `${firstName} retires in ${retirement} years`;
+// }
+
+// //one parameter and more than one lines of code => we need to return statement.
+// //if the function has multiple parameters, they should be wrapped by parentheses
+
+// console.log(yearsUntilRetirement(1997, `Kana`));
+// console.log(yearsUntilRetirement(1980, `Bob`));
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
 }
-//Arrow function
-const calcAge3 = birthYear => 2037 - birthYear;
-const age3 = calcAge3(1997);
-console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  // return retirement;
-  return `${firstName} retires in ${retirement} years`;
+function fruitProcessor(apples, oranges) {
+  const applePieces =  cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
 }
-
-//one parameter and more than one lines of code => we need to return statement.
-//if the function has multiple parameters, they should be wrapped by parentheses
-
-console.log(yearsUntilRetirement(1997, `Kana`));
-console.log(yearsUntilRetirement(1980, `Bob`));
-
+console.log(fruitProcessor(2, 3));
