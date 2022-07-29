@@ -7,14 +7,14 @@
 // if(hasDriversLicense) console.log(`I can drive :D`);
 // // const interface = `Auto`;
 
-function logger() {
-  //function body
-  console.log(`My name is Kana`);
-}
-// calling, running, invoking function
-logger();
-logger();
-logger();
+// function logger() {
+//   //function body
+//   console.log(`My name is Kana`);
+// }
+// // calling, running, invoking function
+// logger();
+// logger();
+// logger();
 //simple function without any parameters or return not need be in Valuable.
 //logger doesn't return any and produce any Values. It just print.
 
@@ -31,17 +31,39 @@ logger();
 // console.log(appleOrangeJuice);
 
 //function declaration
-function calcAge1(birthYear){
-  return 2037 - birthYear;
-}
-const age1 = calcAge1(1997);
+// function calcAge1(birthYear){
+//   return 2037 - birthYear;
+// }
+// const age1 = calcAge1(1997);
 
 
-//function expression
+// //function expression
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// }
+
+// const age2 = calcAge2(1997);
+// console.log(age1, age2);
+
+
 const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+    return 2037 - birthYear;
+}
+//Arrow function
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1997);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years`;
 }
 
-const age2 = calcAge2(1997);
-console.log(age1, age2);
+//one parameter and more than one lines of code => we need to return statement.
+//if the function has multiple parameters, they should be wrapped by parentheses
+
+console.log(yearsUntilRetirement(1997, `Kana`));
+console.log(yearsUntilRetirement(1980, `Bob`));
 
