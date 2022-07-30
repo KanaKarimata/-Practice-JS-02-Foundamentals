@@ -392,18 +392,39 @@
   //   console.log(`Lifting weight repetition ${rep} 🚀`);
   // }
 
-let rep = 1;
- while (rep <= 10) {
-  console.log(`WHILE: Lifting weight repetition ${rep} 🚀`);
-  rep++;
- }
+// let rep = 1;
+//  while (rep <= 10) {
+//   console.log(`WHILE: Lifting weight repetition ${rep} 🚀`);
+//   rep++;
+//  }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
-console.log(dice);
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
 
-while(dice !== 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log(`Loop is about to end...`);
+// while(dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log(`Loop is about to end...`);
+// }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
 }
 
+for(let i = 0; i < bills.length; i++){
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+// console.log(calcTip(100));
+
+// const tips = [calcTip(bills[0]), calcTip(bills[2]), calcTip(bills[bills.length - 1])];
+// console.log(tips);
+// const total = [tips[0] + bills[0], tips[1] + bills[1], tips[tips.length - 1] + bills[bills.length -1]];
+// console.log(total);
