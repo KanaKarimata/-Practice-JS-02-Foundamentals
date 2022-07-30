@@ -284,37 +284,50 @@
 // console.log(jonas.getSummary());
 
 //coding challenge
-const mark = {
-  fullName: `Mark Miller`,
-  mass: `78`,
-  height: `1.68`,
-  calcBMI: function() {
-     this.bmi = this.mass / this.height **2
-     return this.bmi
-  }
-};
+// const mark = {
+//   fullName: `Mark Miller`,
+//   mass: `78`,
+//   height: `1.68`,
+//   calcBMI: function() {
+//      this.bmi = this.mass / this.height **2
+//      return this.bmi
+//   }
+// };
 
-const john = {
-  fullName: `John Smith`,
-  mass: `92`,
-  height: `1.95`,
-  calcBMI: function() {
-    this.bmi = this.mass / this.height **2
-    return this.bmi
- }
-};
+// const john = {
+//   fullName: `John Smith`,
+//   mass: `92`,
+//   height: `1.95`,
+//   calcBMI: function() {
+//     this.bmi = this.mass / this.height **2
+//     return this.bmi
+//  }
+// };
 
-const result = function() {
-  if (mark.calcBMI() > john.calcBMI()) {
-    console.log(`Mark's BMI(${mark.calcBMI()}) is higher than John's (${john.calcBMI()})`);
-  } else {
-    console.log(`John' BMI(${john.calcBMI()}) is higher than Mark's (${mark.calcBMI()})`);
-  }
+// const result = function() {
+//   if (mark.calcBMI() > john.calcBMI()) {
+//     console.log(`Mark's BMI(${mark.calcBMI()}) is higher than John's (${john.calcBMI()})`);
+//   } else {
+//     console.log(`John' BMI(${john.calcBMI()}) is higher than Mark's (${mark.calcBMI()})`);
+//   }
+// }
+
+// result();
+
+// console.log(`Lifting weights repetition 1 🚀`);
+// console.log(`Lifting weights repetition 2 🚀`);
+// console.log(`Lifting weights repetition 3 🚀`);
+// console.log(`Lifting weights repetition 4 🚀`);
+// console.log(`Lifting weights repetition 5 🚀`);
+// console.log(`Lifting weights repetition 6 🚀`);
+// console.log(`Lifting weights repetition 7 🚀`);
+// console.log(`Lifting weights repetition 8 🚀`);
+// console.log(`Lifting weights repetition 9 🚀`);
+// console.log(`Lifting weights repetition 10 🚀`);
+
+for(let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🚀`);
 }
-
-result();
-
-
 
 
 
