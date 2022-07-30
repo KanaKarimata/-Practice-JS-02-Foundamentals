@@ -259,29 +259,60 @@
 // //challenge
 // console.log(`${this.firstName} has ${this.friends.length} friends, and his best friend is called ${this.friends[0]}`);
 
-const jonas = {
-  firstName: `Jonas`,
-  lastName: `Kana`,
-  birthYear: 1991,
-  job: `teacher`,
-  friends: [`Michael`, `Peter`, `Steven`],
-  hasDriverLicense: false,
-  calcAge: function() {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
-  getSummary: function() {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? `a` : `no`} driver's license.`
+// const jonas = {
+//   firstName: `Jonas`,
+//   lastName: `Kana`,
+//   birthYear: 1991,
+//   job: `teacher`,
+//   friends: [`Michael`, `Peter`, `Steven`],
+//   hasDriverLicense: false,
+//   calcAge: function() {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummary: function() {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? `a` : `no`} driver's license.`
+//   }
+// };
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+
+// //challenge
+// //`Jonas is a 46-year old teacher and he has a/no driver's license`
+// console.log(jonas.getSummary());
+
+//coding challenge
+const mark = {
+  fullName: `Mark Miller`,
+  mass: `78`,
+  height: `1.68`,
+  calcBMI: function() {
+     this.bmi = this.mass / this.height **2
+     return this.bmi
   }
 };
-console.log(jonas.calcAge());
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
 
-//challenge
-//`Jonas is a 46-year old teacher and he has a/no driver's license`
-console.log(jonas.getSummary());
+const john = {
+  fullName: `John Smith`,
+  mass: `92`,
+  height: `1.95`,
+  calcBMI: function() {
+    this.bmi = this.mass / this.height **2
+    return this.bmi
+ }
+};
+
+const result = function() {
+  if (mark.calcBMI() > john.calcBMI()) {
+    console.log(`Mark's BMI(${mark.calcBMI()}) is higher than John's (${john.calcBMI()})`);
+  } else {
+    console.log(`John' BMI(${john.calcBMI()}) is higher than Mark's (${mark.calcBMI()})`);
+  }
+}
+
+result();
 
 
 
